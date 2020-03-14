@@ -14,18 +14,10 @@ export default {
       return config
     },
     isMaintenance () {
-      return this.$static.metadata.maintenance
+      return true
     }
   }
 }
 </script>
 
 <style src="~/assets/css/main.css"></style>
-
-<static-query>
-query {
-  metadata {
-    maintenance
-  }
-}
-</static-query>
