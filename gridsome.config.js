@@ -5,6 +5,7 @@ class TailwindExtractor {
 }
 
 module.exports = {
+  maintenancre: true,
   siteName: 'gaspadat site',
   siteDescription: "This is my site",
   siteUrl: 'https://gaspadat.netlify.com',

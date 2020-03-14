@@ -1,6 +1,7 @@
 <template>
   <div>
-    <slot/>
+    <div v-if="isMaintenance">maintenis</div>
+    <slot v-else/>
   </div>
 </template>
 
@@ -11,6 +12,9 @@ export default {
   computed: {
     config () {
       return config
+    },
+    isMaintenance () {
+      return this.$static.metadata.maintenance
     }
   }
 }
