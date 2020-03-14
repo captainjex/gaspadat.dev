@@ -21,3 +21,11 @@ export default {
 </script>
 
 <style src="~/assets/css/main.css"></style>
+
+<static-query>
+query {
+  metadata {
+    maintenance
+  }
+}
+</static-query>
