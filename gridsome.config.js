@@ -37,5 +37,14 @@ module.exports = {
     remark: {
       plugins: ["@gridsome/remark-prismjs"]
     }
-  }
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          require('tailwindcss')
+        ],
+      },
+    },
+  },
 };
