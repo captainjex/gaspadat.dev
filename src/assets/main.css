@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  @apply font-sans text-primary;
 }
