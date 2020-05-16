@@ -13,6 +13,7 @@
     "gridsome": "^0.7.13"
   },
   "devDependencies": {
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "vue-svg-loader": "^0.16.0"
   }
 }
