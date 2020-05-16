@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <slot/>
-    <Footer />
+  <div class="flex flex-col min-h-screen">
+    <Header class="flex-shrink-0" />
+    <main class="flex-auto">
+      <slot/>
+    </main>
+    <Footer class="flex-shrink-0"/>
   </div>
 </template>
 

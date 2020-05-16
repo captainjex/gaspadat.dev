@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <div class="container">
-      <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
+    <div class="flex justify-center">
+      <div class="container">
+        <Hero />
+      </div>
     </div>
-    <LatestJournals :journals="$page.journals.edges" />
   </Layout>
 </template>
 

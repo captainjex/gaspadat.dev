@@ -1,18 +1,20 @@
 <template>
-    <footer class="footer">
-        <div class="container">
-            <span v-html="settings.footer" />
-        </div>
-    </footer>
+  <div class="relative bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="border-t-2 border-grey text-right text-grey-darker">
+        {{ new Date().getFullYear() }}
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            settings: require("../../data/theme.json")
-        }
+  data() {
+    return {
+      settings: require("../../data/theme.json")
     }
+  }
 }
 </script>
 
