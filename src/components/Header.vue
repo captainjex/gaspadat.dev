@@ -70,9 +70,9 @@ export default {
     return {
       showNav: false,
       menuItems: [
-        { label: 'BLOG' },
-        { label: 'NOW' },
-        { label: 'RSS' },
+        // { label: 'BLOG' },
+        // { label: 'NOW' },
+        // { label: 'RSS' },
       ]
     }
   },
