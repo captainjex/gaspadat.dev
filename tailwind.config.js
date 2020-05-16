@@ -5,6 +5,9 @@ module.exports = {
     './src/**/*.jsx',
   ],
   theme: {
+    fontFamily: {
+      serif: ['"Playfair Display"', 'serif']
+    },
     extend: {},
   },
   variants: {},
