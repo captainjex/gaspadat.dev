@@ -56,10 +56,7 @@ export default {
   */
   modules: [
   ],
-  /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
+  srcDir: 'src/',
   build: {
     postcss: {
       // Add plugin names as key and arguments as value
