@@ -1,28 +1,32 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        gaspadat.dev
+  <div>
+    <section class="flex justify-center items-center min-h-screen text-center italic">
+      <h1 class="text-6xl">
+        gaspadat
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    </section>
+    <section class="flex justify-center items-center -m-20">
+      <div class="shadow-inner p-6 text-gray-700 bg-gray-100">
+        <div class="text-xl font-medium">
+          Muhammad Arji' Sharofuddin
+        </div>
+        <div>
+          Software Engineer
+        </div>
+        <div>
+          Semarang, Indonesia
+        </div>
+        <div class="mt-6 text-right">
+          <div>
+            <a href="mailto:hello@gaspadat.dev" class="underline">Email me</a>
+            hello@gaspadat.dev
+          </div>
+        </div>
       </div>
+    </section>
+    <div class="max-w-screen-md">
+      <div class="w-full" />
+      <div class="pt-4" />
     </div>
   </div>
 </template>
@@ -32,16 +36,8 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
+body {
   font-family:
     'Quicksand',
     'Source Sans Pro',
@@ -52,22 +48,6 @@ export default {}
     'Helvetica Neue',
     Arial,
     sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

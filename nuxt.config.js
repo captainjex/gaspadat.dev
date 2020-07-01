@@ -1,3 +1,4 @@
+import path from 'path'
 
 export default {
   /*
@@ -29,6 +30,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/tailwind.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -46,7 +48,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -58,5 +60,13 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js')
+      }
+    }
   }
 }
