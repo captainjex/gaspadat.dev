@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-100">
     <section class="flex justify-center items-center min-h-screen text-center ">
-      <h1 class="text-6xl text-primary italic">
-        gaspadat
+      <h1 class="text-6xl tracking-widest font-extrabold text-primary italic" :class="$style.shadowTitle">
+        g<span :class="$style.shadowUnderline">as</span>padat
       </h1>
     </section>
     <section class="flex justify-center items-center px-2">
@@ -52,19 +52,25 @@ export default {
 }
 </script>
 
-<style>
-
-body {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+<style module>
+.shadowTitle {
+  text-shadow: -2px -2px 0px theme('colors.gray.100'),
+    2px 2px 0px theme('colors.gray.100'),
+    6px 6px 0px theme('colors.accent');
 }
 
+.shadowUnderline {
+  position: relative;
+}
+.shadowUnderline::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  right: 4px;
+  width: calc(100% - 8px);
+  height: 4px;
+  background: theme('colors.accent');
+  transform: skewX(-16deg);
+}
 </style>
